@@ -1,7 +1,7 @@
 [
   {
     "id": "mystic-hearts",
-    "title": "The Interfal Duo",
+    "title": "The Interfal Duo - 恶魔兄妹",
     "description": "恶魔佳亚意外从天宫坠落并失去所有的恶魔之力,她和哥哥开始了学习人类社会并隐藏身份的生活,同时他们也在调查着他们坠落的真相.",
     "coverImage": "/src/assets/cover1.jpg",
     "episodes": [
@@ -18,7 +18,7 @@
   },
   {
     "id": "dragon-quest-legends",
-    "title": "小镇魔法师", 
+    "title": "Mystic in the Village - 小镇魔法师", 
     "description": "一位不知从何而来的魔法师,在小镇里开了个魔法道具商店.一些不同的气息隐隐的开始在小镇蔓延.",
     "coverImage": "/src/assets/cover2.jpg",
     "episodes": [
@@ -35,7 +35,7 @@
   },
   {
     "id": "school-days",
-    "title": "The business trip to Mars",
+    "title": "The business trip to Mars 火星之旅",
     "description": "公元2350年,地球植物学家Nate收到一个出差去火星的任务,原本以为很快可以搞定的Nate发现这次任务似乎隐藏着不同于往常的真相.",
     "coverImage": "/src/assets/cover3.jpg",
     "episodes": [
