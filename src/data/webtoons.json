@@ -1,13 +1,13 @@
 [
   {
     "id": "mystic-hearts",
-    "title": "Mystic Hearts",
-    "description": "A tale of forbidden love between a human and a magical being in a world where two realms collide.",
+    "title": "The Interfal Duo",
+    "description": "恶魔佳亚意外从天宫坠落并失去所有的恶魔之力,她和哥哥开始了学习人类社会并隐藏身份的生活,同时他们也在调查着他们坠落的真相.",
     "coverImage": "/src/assets/cover1.jpg",
     "episodes": [
       {
         "id": 1,
-        "title": "First Encounter",
+        "title": "坠落人间",
         "images": [
           "/src/assets/episode1-1.jpg",
           "/src/assets/episode1-2.jpg",
@@ -18,8 +18,8 @@
   },
   {
     "id": "dragon-quest-legends",
-    "title": "Dragon Quest Legends", 
-    "description": "Follow a young warrior on an epic journey to defeat ancient dragons and save the kingdom.",
+    "title": "小镇魔法师", 
+    "description": "一位不知从何而来的魔法师,在小镇里开了个魔法道具商店.一些不同的气息隐隐的开始在小镇蔓延.",
     "coverImage": "/src/assets/cover2.jpg",
     "episodes": [
       {
@@ -35,8 +35,8 @@
   },
   {
     "id": "school-days",
-    "title": "School Days",
-    "description": "A heartwarming story about friendship, love, and growing up during the most important years of life.",
+    "title": "The business trip to Mars",
+    "description": "公元2350年,地球植物学家Nate收到一个出差去火星的任务,原本以为很快可以搞定的Nate发现这次任务似乎隐藏着不同于往常的真相.",
     "coverImage": "/src/assets/cover3.jpg",
     "episodes": [
       {
