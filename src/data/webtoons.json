@@ -1,0 +1,53 @@
+[
+  {
+    "id": "mystic-hearts",
+    "title": "Mystic Hearts",
+    "description": "A tale of forbidden love between a human and a magical being in a world where two realms collide.",
+    "coverImage": "/src/assets/cover1.jpg",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "First Encounter",
+        "images": [
+          "/src/assets/episode1-1.jpg",
+          "/src/assets/episode1-2.jpg",
+          "/src/assets/episode1-3.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dragon-quest-legends",
+    "title": "Dragon Quest Legends", 
+    "description": "Follow a young warrior on an epic journey to defeat ancient dragons and save the kingdom.",
+    "coverImage": "/src/assets/cover2.jpg",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "The Beginning",
+        "images": [
+          "/src/assets/episode2-1.jpg",
+          "/src/assets/episode2-2.jpg",
+          "/src/assets/episode2-3.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "school-days",
+    "title": "School Days",
+    "description": "A heartwarming story about friendship, love, and growing up during the most important years of life.",
+    "coverImage": "/src/assets/cover3.jpg",
+    "episodes": [
+      {
+        "id": 1,
+        "title": "New Semester",
+        "images": [
+          "/src/assets/episode3-1.jpg",
+          "/src/assets/episode3-2.jpg",
+          "/src/assets/episode3-3.jpg"
+        ]
+      }
+    ]
+  }
+]
