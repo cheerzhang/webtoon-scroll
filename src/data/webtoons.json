@@ -9,9 +9,9 @@
         "id": 1,
         "title": "坠落人间",
         "images": [
-          "/src/assets/episode1-1.jpg",
-          "/src/assets/episode1-2.jpg",
-          "/src/assets/episode1-3.jpg"
+          "/src/assets/webtoon1/episode1-1.jpg",
+          "/src/assets/webtoon1/episode1-2.jpg",
+          "/src/assets/webtoon1/episode1-3.jpg"
         ]
       }
     ]
@@ -26,9 +26,9 @@
         "id": 1,
         "title": "The Beginning",
         "images": [
-          "/src/assets/episode2-1.jpg",
-          "/src/assets/episode2-2.jpg",
-          "/src/assets/episode2-3.jpg"
+          "/src/assets/webtoon2/episode1-1.jpg",
+          "/src/assets/webtoon2/episode1-2.jpg",
+          "/src/assets/webtoon2/episode1-3.jpg"
         ]
       }
     ]
@@ -43,9 +43,9 @@
         "id": 1,
         "title": "出发",
         "images": [
-          "/src/assets/episode3-1.jpg",
-          "/src/assets/episode3-2.jpg",
-          "/src/assets/episode3-3.jpg"
+          "/src/assets/webtoon3/episode1-1.jpg",
+          "/src/assets/webtoon2/episode1-2.jpg",
+          "/src/assets/webtoon2/episode1-3.jpg"
         ]
       }
     ]

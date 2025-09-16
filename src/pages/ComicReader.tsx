@@ -3,10 +3,8 @@ import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import webtoonsData from '@/data/webtoons.json';
 
-// Import images statically for now (in production you'd load these dynamically)
-import episode11 from '@/assets/episode1-1.jpg';
-import episode12 from '@/assets/episode1-2.jpg';
-import episode13 from '@/assets/episode1-3.jpg';
+// 动态加载所有 assets 下的图片（jpg、jpeg、png）
+const images = import.meta.glob('@/assets/**/*.{jpg,jpeg,png}', { eager: true });
 
 const ComicReader = () => {
   const { id } = useParams();
@@ -28,12 +26,7 @@ const ComicReader = () => {
     );
   }
 
-  // For demo purposes, map to actual imported images
-  const imageMap: Record<string, string> = {
-    '/src/assets/episode1-1.jpg': episode11,
-    '/src/assets/episode1-2.jpg': episode12,
-    '/src/assets/episode1-3.jpg': episode13,
-  };
+  const currentEpisode = webtoon.episodes[0]; // 暂时显示第一个 Episode
 
   return (
     <div className="min-h-screen bg-reader-bg">
@@ -50,21 +43,31 @@ const ComicReader = () => {
           </Button>
           <div>
             <h1 className="font-semibold text-foreground">{webtoon.title}</h1>
-            <p className="text-sm text-muted-foreground">Episode 1: {webtoon.episodes[0]?.title}</p>
+            <p className="text-sm text-muted-foreground">Episode 1: {currentEpisode.title}</p>
           </div>
         </div>
       </div>
 
       {/* Comic Images */}
-      <div className="max-w-2xl mx-auto">
-        {webtoon.episodes[0]?.images.map((imagePath, index) => {
-          const actualImage = imageMap[imagePath] || imagePath;
+      <div className="max-w-2xl mx-auto px-4">
+        {currentEpisode.images.map((relativePath: string, index: number) => {
+          const fullPath = `/src/assets/${relativePath}`;
+          const imageModule = images[fullPath] as { default: string };
+
+          if (!imageModule) {
+            return (
+              <div key={index} className="text-red-500 text-center">
+                Missing image: {relativePath}
+              </div>
+            );
+          }
+
           return (
             <div key={index} className="w-full">
               <img 
-                src={actualImage}
+                src={imageModule.default}
                 alt={`Page ${index + 1}`}
-                className="w-full h-auto block"
+                className="w-full h-auto block mb-4"
                 loading={index > 0 ? 'lazy' : 'eager'}
               />
             </div>
