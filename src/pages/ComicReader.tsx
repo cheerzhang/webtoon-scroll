@@ -3,7 +3,7 @@ import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import webtoonsData from '@/data/webtoons.json';
 
-// 动态加载所有 assets 下的图片（jpg、jpeg、png）
+// 动态加载所有图片（只要路径包含 /src/assets/ 就可以）
 const images = import.meta.glob('@/assets/**/*.{jpg,jpeg,png}', { eager: true });
 
 const ComicReader = () => {
@@ -26,7 +26,7 @@ const ComicReader = () => {
     );
   }
 
-  const currentEpisode = webtoon.episodes[0]; // 暂时显示第一个 Episode
+  const currentEpisode = webtoon.episodes[0]; // 暂时只支持第一话
 
   return (
     <div className="min-h-screen bg-reader-bg">
@@ -50,14 +50,15 @@ const ComicReader = () => {
 
       {/* Comic Images */}
       <div className="max-w-2xl mx-auto px-4">
-        {currentEpisode.images.map((relativePath: string, index: number) => {
-          const fullPath = `/src/assets/${relativePath}`;
-          const imageModule = images[fullPath] as { default: string };
+        {currentEpisode.images.map((imagePath: string, index: number) => {
+          // 去掉开头的 "/src" 变成真实文件路径
+          const cleanedPath = imagePath.replace(/^\/src/, '/src'); // for safety
+          const imageModule = images[cleanedPath] as { default: string };
 
           if (!imageModule) {
             return (
               <div key={index} className="text-red-500 text-center">
-                Missing image: {relativePath}
+                ❌ 找不到图片: {imagePath}
               </div>
             );
           }
