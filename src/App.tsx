@@ -17,7 +17,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<WebtoonHome />} />
-          <Route path="/read/:id" element={<ComicReader />} />
+          <!-- <Route path="/read/:id" element={<ComicReader />} /> -->
+          <Route path="/read/:id/:episodeId" element={<ComicReader />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
