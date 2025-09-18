@@ -7,7 +7,7 @@ import webtoonsData from '@/data/webtoons.json';
 const images = import.meta.glob('@/assets/**/*.{jpg,jpeg,png}', { eager: true });
 
 const ComicReader = () => {
-  const { id, episodeId } = useParams(); // 获取作品 ID 和章节 ID
+  const { id } = useParams();
   const navigate = useNavigate();
 
   const webtoon = webtoonsData.find(w => w.id === id);
@@ -26,17 +26,7 @@ const ComicReader = () => {
     );
   }
 
-  // 暂时只支持第一话 const currentEpisode = webtoon.episodes[0]; 
-  const episodeIndex = episodeId ? parseInt(episodeId) - 1 : 0;
-  const currentEpisode = webtoon.episodes[episodeIndex];
-
-  if (!currentEpisode) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <h1 className="text-2xl font-bold">❌ Episode Not Found</h1>
-      </div>
-    );
-  }
+  const currentEpisode = webtoon.episodes[0]; // 暂时只支持第一话
 
   return (
     <div className="min-h-screen bg-reader-bg">
