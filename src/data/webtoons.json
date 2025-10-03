@@ -43,11 +43,36 @@
         "id": 1,
         "title": "出发",
         "images": [
-          "/src/assets/webtoon3/episode1-1.jpg",
-          "/src/assets/webtoon3/episode1-2.jpg",
-          "/src/assets/webtoon3/episode1-3.jpg",
-          "/src/assets/webtoon3/episode1-4.jpg",
-          "/src/assets/webtoon3/episode1-5.jpg"
+          "/src/assets/webtoon3/episode1-1.png",
+          "/src/assets/webtoon3/episode1-2.png",
+          "/src/assets/webtoon3/episode1-3.png",
+          "/src/assets/webtoon3/episode1-4.png",
+          "/src/assets/webtoon3/episode1-5.png",
+          "/src/assets/webtoon3/episode1-6.png",
+          "/src/assets/webtoon3/episode1-7.png",
+          "/src/assets/webtoon3/episode1-8.png",
+          "/src/assets/webtoon3/episode1-9.png",
+          "/src/assets/webtoon3/episode1-10.png",
+          "/src/assets/webtoon3/episode1-11.png",
+          "/src/assets/webtoon3/episode1-12.png"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "抵达",
+        "images": [
+          "/src/assets/webtoon3/episode2-1.png",
+          "/src/assets/webtoon3/episode2-2.png",
+          "/src/assets/webtoon3/episode2-3.png",
+          "/src/assets/webtoon3/episode2-4.png",
+          "/src/assets/webtoon3/episode2-5.png",
+          "/src/assets/webtoon3/episode2-6.png",
+          "/src/assets/webtoon3/episode2-7.png",
+          "/src/assets/webtoon3/episode2-8.png",
+          "/src/assets/webtoon3/episode2-9.png",
+          "/src/assets/webtoon3/episode2-10.png",
+          "/src/assets/webtoon3/episode2-11.png",
+          "/src/assets/webtoon3/episode2-12.png"
         ]
       }
     ]
